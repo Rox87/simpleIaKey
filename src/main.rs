@@ -235,8 +235,8 @@ fn main() {
         &quit_i,
     ]);
 
-    let icon = if std::path::Path::new("icon.jpg").exists() {
-        load_icon(std::path::Path::new("icon.jpg"))
+    let icon = if std::path::Path::new("assets/icon.jpg").exists() {
+        load_icon(std::path::Path::new("assets/icon.jpg"))
     } else {
         panic!("icon.jpg not found!");
     };
