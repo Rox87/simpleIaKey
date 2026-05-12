@@ -1,3 +1,6 @@
+
+#![windows_subsystem = "windows"]
+
 use app::config::AppConfig;
 use app::ai_client::{fetch_ai, fetch_ai_code, fetch_ai_html};
 
