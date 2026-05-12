@@ -34,31 +34,6 @@ fn simulate_copy_and_get_text(enigo: &mut Enigo, clipboard: &mut Clipboard) -> S
         }
     };
 
-    thread::sleep(Duration::from_millis(50));
-
-    // Escreve "Processando"
-    if let Err(e) = clipboard.set_text("Processando") {
-        error!("Erro ao definir clipboard para Processando: {}", e);
-    }
-
-    thread::sleep(Duration::from_millis(50));
-
-    // Simula Ctrl+V (colar o "Processando")
-    enigo.key_down(Key::Control);
-    enigo.key_click(Key::Layout('v'));
-    enigo.key_up(Key::Control);
-
-    thread::sleep(Duration::from_millis(50));
-
-    // Seleciona o "Processando" para a esquerda (Ctrl+Shift+Left)
-    enigo.key_down(Key::Control);
-    enigo.key_down(Key::Shift);
-    enigo.key_click(Key::LeftArrow);
-    enigo.key_up(Key::Shift);
-    enigo.key_up(Key::Control);
-
-    thread::sleep(Duration::from_millis(50));
-
     text
 }
 
@@ -140,7 +115,7 @@ fn worker_loop(receiver: crossbeam_channel::Receiver<TaskType>, config: AppConfi
 
 fn send_task_on_key(key: RdevKey, sender: &Sender<TaskType>) {
     match key {
-        RdevKey::F2 => {
+        RdevKey::F3 => {
             let _ = sender.send(TaskType::Melhore);
         }
         RdevKey::F8 => {
@@ -170,7 +145,7 @@ fn main() {
         worker_loop(receiver, config);
     });
 
-    info!("Listener ativo. Pressione F2 (melhore), F8 (general), F9 (python) ou F10 (html) para enviar consulta ao Gemini.");
+    info!("Listener ativo. Pressione F3 (melhore), F8 (general), F9 (python) ou F10 (html) para enviar consulta ao Gemini.");
 
     // Callback para eventos rdev
     let callback = move |event: Event| {

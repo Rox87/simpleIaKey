@@ -19,10 +19,10 @@ impl AppConfig {
                 // Retornar um valor padrão em caso de erro para não quebrar imediatamente.
                 return AppConfig {
                     gemini_api_key: String::new(),
-                    modelo_geral: String::from("gemini-1.5-flash"),
-                    modelo_python: String::from("gemini-1.5-pro"),
-                    modelo_up: String::from("gemini-1.5-pro"),
-                    modelo_html: String::from("gemini-1.5-flash"),
+                    modelo_geral: String::from("gemini-3.1-flash-lite"),
+                    modelo_python: String::from("gemini-3.1-flash-lite"),
+                    modelo_up: String::from("gemini-3.1-flash-lite"),
+                    modelo_html: String::from("gemini-3.1-flash-lite"),
                 };
             }
         };
