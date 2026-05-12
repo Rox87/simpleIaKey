@@ -1,1 +1,2 @@
-pub mod config; pub mod fetch_gemini;
+pub mod config;
+pub mod ai_client;
