@@ -1,0 +1,177 @@
+2026-05-18 10:11:36 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3 | Código: grok-4.3.
+2026-05-18 10:11:37 [INFO] - Query: ola
+2026-05-18 10:11:37 [INFO] - Python Code task...
+2026-05-18 10:11:37 [INFO] - Aplicação iniciada.
+2026-05-18 10:11:37 [ERROR] - Erro Grok (403 Forbidden): Ok("{\"code\":\"The caller does not have permission to execute the specified operation\",\"error\":\"Your team 385db6b6-245c-4945-b15e-9040fcab5f29 has either used all available credits or reached its monthly spending limit. To continue making API requests, please purchase more credits or raise your spending limit.\"}")
+2026-05-18 10:11:37 [INFO] - [grok-4.3 CODE] Tempo: 0.33s
+2026-05-18 10:11:38 [INFO] - Python Code task...
+2026-05-18 10:11:38 [ERROR] - Erro Grok (403 Forbidden): Ok("{\"code\":\"The caller does not have permission to execute the specified operation\",\"error\":\"Your team 385db6b6-245c-4945-b15e-9040fcab5f29 has either used all available credits or reached its monthly spending limit. To continue making API requests, please purchase more credits or raise your spending limit.\"}")
+2026-05-18 10:11:38 [INFO] - [grok-4.3 CODE] Tempo: 0.31s
+2026-05-18 10:11:39 [INFO] - Python Code task...
+2026-05-18 10:11:39 [ERROR] - Erro Grok (403 Forbidden): Ok("{\"code\":\"The caller does not have permission to execute the specified operation\",\"error\":\"Your team 385db6b6-245c-4945-b15e-9040fcab5f29 has either used all available credits or reached its monthly spending limit. To continue making API requests, please purchase more credits or raise your spending limit.\"}")
+2026-05-18 10:11:39 [INFO] - [grok-4.3 CODE] Tempo: 0.22s
+2026-05-18 10:11:40 [ERROR] - Falha após as tentativas. Nada foi colado.
+2026-05-18 10:26:54 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3 | Código: grok-4.3.
+2026-05-18 10:26:54 [INFO] - Aplicação iniciada.
+2026-05-18 10:26:58 [INFO] - Query: ola
+2026-05-18 10:26:58 [INFO] - General task...
+2026-05-18 10:27:04 [INFO] - [grok-4.3] Tempo: 5.42s
+2026-05-18 10:27:04 [INFO] - Resultado colado com sucesso.
+2026-05-18 10:59:33 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 10:59:33 [INFO] - Aplicação iniciada.
+2026-05-18 10:59:35 [INFO] - Query: ola
+2026-05-18 10:59:35 [INFO] - General task...
+2026-05-18 10:59:42 [INFO] - [grok-4.3_none] Tempo: 7.19s
+2026-05-18 10:59:42 [INFO] - Resultado colado com sucesso.
+2026-05-18 11:01:51 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 11:01:51 [INFO] - Aplicação iniciada.
+2026-05-18 11:02:01 [INFO] - Query: olá
+2026-05-18 11:02:01 [INFO] - General task...
+2026-05-18 11:02:07 [INFO] - [grok-4.3_none] Tempo: 5.65s
+2026-05-18 11:02:07 [INFO] - Resultado colado com sucesso.
+2026-05-18 11:23:59 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 11:23:59 [INFO] - Query: ola
+2026-05-18 11:23:59 [INFO] - General task...
+2026-05-18 11:23:59 [INFO] - Aplicação iniciada.
+2026-05-18 11:24:08 [INFO] - [grok-4.3_none] Tempo: 9.18s
+2026-05-18 11:24:08 [INFO] - Resultado colado com sucesso.
+2026-05-18 11:24:51 [INFO] - Query: imprima de 1 a 100
+2026-05-18 11:24:51 [INFO] - HTML task...
+2026-05-18 11:24:55 [INFO] - [grok-4.3_high CODE] Tempo: 3.88s
+2026-05-18 11:24:55 [INFO] - Resultado colado com sucesso.
+2026-05-18 11:25:51 [INFO] - Query: imprima de 1 a 100
+2026-05-18 11:25:51 [INFO] - Python Code task...
+2026-05-18 11:25:57 [INFO] - [grok-4.3_high CODE] Tempo: 6.21s
+2026-05-18 11:25:57 [INFO] - Resultado colado com sucesso.
+2026-05-18 11:28:10 [INFO] - Query: faça um arquivo que calcule a soma de dois numeros e outro que calcule a divisão de dois numeros
+2026-05-18 11:28:10 [INFO] - Python Code task...
+2026-05-18 11:28:16 [INFO] - [grok-4.3_high CODE] Tempo: 6.14s
+2026-05-18 11:28:16 [INFO] - Resultado colado com sucesso.
+2026-05-18 11:30:43 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 11:30:43 [INFO] - Aplicação iniciada.
+2026-05-18 11:30:48 [INFO] - Query: faça um arquivo que calcule a soma de dois numeros e outro que calcule a divisão de dois numeros
+
+2026-05-18 11:30:48 [INFO] - Low code task...
+2026-05-18 11:30:55 [INFO] - [grok-4.3_high CODE] Tempo: 6.92s
+2026-05-18 11:30:55 [INFO] - Resultado colado com sucesso.
+2026-05-18 11:32:29 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 11:32:29 [INFO] - Aplicação iniciada.
+2026-05-18 11:32:29 [INFO] - Query: faça um arquivo que calcule a soma de dois numeros e outro que calcule a divisão de dois numeros
+
+2026-05-18 11:32:29 [INFO] - Low code task...
+2026-05-18 11:32:38 [INFO] - [grok-4.3_high CODE] Tempo: 9.06s
+2026-05-18 11:32:38 [INFO] - Resultado colado com sucesso.
+2026-05-18 11:33:35 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 11:33:36 [INFO] - Aplicação iniciada.
+2026-05-18 11:35:32 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 11:35:32 [INFO] - Aplicação iniciada.
+2026-05-18 11:36:07 [INFO] - Query: faça um arquivo que calcule a soma de dois numeros e outro que calcule a divisão de dois numeros
+2026-05-18 11:36:07 [INFO] - Low code task...
+2026-05-18 11:36:11 [INFO] - [grok-4.3_high CODE] Tempo: 4.78s
+2026-05-18 11:36:11 [INFO] - Resultado colado com sucesso.
+2026-05-18 11:37:09 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 11:37:09 [INFO] - Aplicação iniciada.
+2026-05-18 11:37:44 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 11:37:45 [INFO] - Aplicação iniciada.
+2026-05-18 11:37:47 [INFO] - Query: faça um arquivo que calcule a soma de dois numeros e outro que calcule a divisão de dois numeros
+2026-05-18 11:37:47 [INFO] - Low code task...
+2026-05-18 11:37:52 [INFO] - [grok-4.3_high CODE] Tempo: 4.92s
+2026-05-18 11:37:52 [INFO] - Resultado colado com sucesso.
+2026-05-18 11:43:31 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 11:43:31 [INFO] - Aplicação iniciada.
+2026-05-18 11:43:38 [INFO] - Query: faça um arquivo que calcule a soma de dois numeros e outro que calcule a divisão de dois numeros 
+2026-05-18 11:43:38 [INFO] - Low code task...
+2026-05-18 11:43:44 [INFO] - [grok-4.3_high CODE] Tempo: 5.58s
+2026-05-18 11:43:44 [INFO] - Resultado colado com sucesso.
+2026-05-18 11:47:51 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 11:47:52 [INFO] - Aplicação iniciada.
+2026-05-18 11:47:52 [INFO] - Query: faça um arquivo que calcule a soma de dois numeros e outro que calcule a divisão de dois numeros  
+
+2026-05-18 11:47:52 [INFO] - Low code task...
+2026-05-18 11:47:59 [INFO] - [grok-4.3_high CODE] Tempo: 7.41s
+2026-05-18 11:47:59 [INFO] - Resultado colado com sucesso.
+2026-05-18 11:49:01 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 11:49:01 [INFO] - Aplicação iniciada.
+2026-05-18 11:49:07 [INFO] - Query: faça um arquivo que calcule a soma de dois numeros e outro que calcule a divisão de dois numeros
+
+2026-05-18 11:49:07 [INFO] - Low code task...
+2026-05-18 11:49:13 [INFO] - [grok-4.3_high CODE] Tempo: 5.53s
+2026-05-18 11:49:13 [INFO] - Resultado colado com sucesso.
+2026-05-18 11:50:07 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 11:50:08 [INFO] - Aplicação iniciada.
+2026-05-18 11:50:12 [INFO] - Query: faça um arquivo que calcule a soma de dois numeros e outro que calcule a divisão de dois numeros
+2026-05-18 11:50:12 [INFO] - Low code task...
+2026-05-18 11:50:23 [INFO] - [grok-4.3_high CODE] Tempo: 11.73s
+2026-05-18 11:50:23 [INFO] - Resultado colado com sucesso.
+2026-05-18 11:54:06 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 11:54:06 [INFO] - Aplicação iniciada.
+2026-05-18 11:54:43 [INFO] - Query: faça um arquivo que calcule a soma de dois numeros e outro que calcule a divisão de dois numeros
+2026-05-18 11:54:43 [INFO] - Low code task...
+2026-05-18 11:54:51 [INFO] - [grok-4.3_high CODE] Tempo: 8.08s
+2026-05-18 11:54:51 [INFO] - Resultado colado com sucesso.
+2026-05-18 11:57:14 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 11:57:14 [INFO] - Aplicação iniciada.
+2026-05-18 11:57:26 [INFO] - Query: faça um arquivo que calcule a soma de dois numeros e outro que calcule a divisão de dois numeros
+2026-05-18 11:57:26 [INFO] - Low code task...
+2026-05-18 11:57:33 [INFO] - [grok-4.3_high CODE] Tempo: 6.10s
+2026-05-18 11:57:33 [INFO] - Resultado colado com sucesso.
+2026-05-18 11:57:49 [INFO] - Query: imprima de 1 a 100
+2026-05-18 11:57:49 [INFO] - Low code task...
+2026-05-18 11:57:53 [INFO] - [grok-4.3_high CODE] Tempo: 3.88s
+2026-05-18 11:57:53 [INFO] - Resultado colado com sucesso.
+2026-05-18 12:09:31 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 12:09:31 [INFO] - Aplicação iniciada.
+2026-05-18 12:10:36 [INFO] - Query: rust: imprime de 1 a 100
+2026-05-18 12:10:36 [INFO] - Low code task...
+2026-05-18 12:10:40 [INFO] - [grok-4.3_high CODE] Tempo: 4.30s
+2026-05-18 12:10:40 [INFO] - Resultado colado com sucesso.
+2026-05-18 12:11:44 [INFO] - Query: Olá bruno, tudo sim e ai?
+2026-05-18 12:11:44 [INFO] - Ask and Answer task...
+2026-05-18 12:11:55 [INFO] - [grok-4.3_none] Tempo: 10.92s
+2026-05-18 12:11:55 [INFO] - Resultado colado com sucesso.
+2026-05-18 12:13:32 [INFO] - Query: rust: imprime de 1 a 100 
+
+2026-05-18 12:13:32 [INFO] - Low code task...
+2026-05-18 12:13:36 [INFO] - [grok-4.3_high CODE] Tempo: 3.36s
+2026-05-18 12:13:36 [INFO] - Resultado colado com sucesso.
+2026-05-18 12:15:00 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 12:15:00 [INFO] - Aplicação iniciada.
+2026-05-18 12:15:05 [INFO] - Query: rust: imprime de 1 a 100 
+
+2026-05-18 12:15:05 [INFO] - Low code task...
+2026-05-18 12:15:11 [INFO] - [grok-4.3_high CODE] Tempo: 5.94s
+2026-05-18 12:15:11 [INFO] - Resultado colado com sucesso.
+2026-05-18 12:17:06 [INFO] - Query: rust: um arquivo que soma dois números outro que divide
+2026-05-18 12:17:06 [INFO] - Low code task...
+2026-05-18 12:17:15 [INFO] - [grok-4.3_high CODE] Tempo: 8.35s
+2026-05-18 12:17:15 [INFO] - Resultado colado com sucesso.
+2026-05-18 12:21:24 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 12:21:24 [INFO] - Aplicação iniciada.
+2026-05-18 12:21:26 [INFO] - Query: ola
+2026-05-18 12:21:26 [INFO] - Ask and Answer task...
+2026-05-18 12:21:34 [INFO] - [grok-4.3_none] Tempo: 7.72s
+2026-05-18 12:21:34 [INFO] - Resultado colado com sucesso.
+2026-05-18 12:24:32 [INFO] - Query: Bruno, com o que vamos atuar primoridalmente?
+2026-05-18 12:24:32 [INFO] - Ask and Answer task...
+2026-05-18 12:24:52 [INFO] - [grok-4.3_none] Tempo: 19.89s
+2026-05-18 12:24:52 [INFO] - Resultado colado com sucesso.
+2026-05-18 12:26:01 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-18 12:26:01 [INFO] - Aplicação iniciada.
+2026-05-18 12:26:07 [INFO] - Query: Bruno, com o que vamos atuar primoridalmente?
+2026-05-18 12:26:07 [INFO] - Melhore task...
+2026-05-18 12:26:13 [INFO] - [grok-4.3_none] Tempo: 6.62s
+2026-05-18 12:26:13 [INFO] - Resultado colado com sucesso.
+2026-05-18 12:26:48 [INFO] - Query: Se prefirir me passa os detalhes na 4a, é mais curiosidade
+2026-05-18 12:26:48 [INFO] - Melhore task...
+2026-05-18 12:26:54 [INFO] - [grok-4.3_none] Tempo: 6.17s
+2026-05-18 12:26:54 [INFO] - Resultado colado com sucesso.
+2026-05-18 12:30:57 [INFO] - Query: Vcs já estão envolvendo IA nas operações e tudo mais?
+2026-05-18 12:30:57 [INFO] - Melhore task...
+2026-05-18 12:31:04 [INFO] - [grok-4.3_none] Tempo: 7.09s
+2026-05-18 12:31:04 [INFO] - Resultado colado com sucesso.
+2026-05-18 12:42:55 [INFO] - Query: Teremos a opção de uso de IA?
+2026-05-18 12:42:55 [INFO] - Melhore task...
+2026-05-18 12:43:01 [INFO] - [grok-4.3_none] Tempo: 6.45s
+2026-05-18 12:43:02 [INFO] - Resultado colado com sucesso.
+2026-05-19 14:14:23 [INFO] - IA Key Lite Iniciada. Modelos: Geral: grok-4.3_none | Código: grok-4.3_high.
+2026-05-19 14:14:23 [INFO] - Aplicação iniciada.

@@ -1,8 +1,8 @@
 
-#![windows_subsystem = "windows"]
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 use jKey::config::AppConfig;
-use jKey::ai_client::{fetch_ai, fetch_ai_code, fetch_ai_html};
+use jKey::ai_client::{fetch_ai, fetch_ai_code};
 
 use arboard::Clipboard;
 use crossbeam_channel::{unbounded, Sender};
@@ -23,11 +23,40 @@ use tao::event_loop::{ControlFlow, EventLoopBuilder};
 use sysinfo::System;
 // use image::GenericImageView;
 
+struct SimpleLogger {
+    file: std::sync::Mutex<std::fs::File>,
+}
+
+impl log::Log for SimpleLogger {
+    fn enabled(&self, metadata: &log::Metadata) -> bool {
+        metadata.level() <= log::Level::Info
+    }
+
+    fn log(&self, record: &log::Record) {
+        if self.enabled(record.metadata()) {
+            let log_line = format!(
+                "{} [{}] - {}\n",
+                chrono::Local::now().format("%Y-%m-%d %H:%M:%S"),
+                record.level(),
+                record.args()
+            );
+            print!("{}", log_line);
+            if let Ok(mut file) = self.file.lock() {
+                use std::io::Write;
+                let _ = file.write_all(log_line.as_bytes());
+                let _ = file.flush();
+            }
+        }
+    }
+
+    fn flush(&self) {}
+}
+
 enum TaskType {
     Melhore,
     General,
-    Python,
-    Html,
+    CodeLow,
+    CodeHigh,
 }
 
 fn simulate_copy_and_get_text(enigo: &mut Enigo, clipboard: &mut Clipboard) -> String {
@@ -86,18 +115,18 @@ fn worker_loop(receiver: crossbeam_channel::Receiver<TaskType>, config: AppConfi
                     if !result.is_empty() { success = true; }
                 }
                 TaskType::General => {
-                    info!("General task...");
+                    info!("Ask and Answer task...");
                     result = fetch_ai(&query, &config);
                     if !result.is_empty() { success = true; }
                 }
-                TaskType::Python => {
-                    info!("Python Code task...");
-                    result = fetch_ai_code(&query, &config);
+                TaskType::CodeLow => {
+                    info!("Low code task...");
+                    result = fetch_ai_code(&query, &config,"none");
                     if !result.is_empty() { success = true; }
                 }
-                TaskType::Html => {
-                    info!("HTML task...");
-                    result = fetch_ai_html(&query, &config);
+                TaskType::CodeHigh => {
+                    info!("High code task...");
+                    result = fetch_ai_code(&query, &config, "high");
                     if !result.is_empty() { success = true; }
                 }
             }
@@ -119,17 +148,17 @@ fn worker_loop(receiver: crossbeam_channel::Receiver<TaskType>, config: AppConfi
 
 fn send_task_on_key(key: RdevKey, sender: &Sender<TaskType>) {
     match key {
-        RdevKey::F3 => {
+        RdevKey::F8 => {
             let _ = sender.send(TaskType::Melhore);
         }
-        RdevKey::F8 => {
+        RdevKey::F9 => {
             let _ = sender.send(TaskType::General);
         }
-        RdevKey::F9 => {
-            let _ = sender.send(TaskType::Python);
-        }
         RdevKey::F10 => {
-            let _ = sender.send(TaskType::Html);
+            let _ = sender.send(TaskType::CodeLow);
+        }
+        RdevKey::F11 => {
+            let _ = sender.send(TaskType::CodeHigh);
         }
         _ => {}
     }
@@ -188,7 +217,20 @@ fn main() {
         let _ = io::stdin().read_line(&mut buffer);
     }));
 
-    env_logger::Builder::from_env(env_logger::Env::default().default_filter_or("info")).init();
+    let log_file = std::fs::OpenOptions::new()
+        .create(true)
+        .write(true)
+        .append(true)
+        .open("app.log")
+        .expect("Não foi possível abrir o arquivo de log app.log");
+
+    let logger = SimpleLogger {
+        file: std::sync::Mutex::new(log_file),
+    };
+
+    log::set_boxed_logger(Box::new(logger))
+        .map(|()| log::set_max_level(log::LevelFilter::Info))
+        .expect("Não foi possível inicializar o logger");
 
     let config = AppConfig::load();
     let (sender, receiver) = unbounded();
